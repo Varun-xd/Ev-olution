@@ -5,11 +5,16 @@
   margin: 40px 120px;
   color: white;
 }
+
 .nav-logo {
   font-family: Outfit;
   font-size: 42px;
-  font: weight 500px;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
+
+/* Removed the .nav-logo:hover rule */
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -17,9 +22,54 @@
   font-size: 18px;
   gap: 90px;
 }
+
+.nav-menu li {
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-menu li:hover {
+  color: #ffa500; /* Change color on hover */
+}
+
+.nav-menu li:focus {
+  outline: 2px solid #ffa500; /* Focus outline for accessibility */
+}
+
+.nav-menu .active {
+  color: #ffa500; /* Active menu item color */
+}
+
 .nav-contact {
   border-radius: 50px;
   padding: 10px 38px;
   background: #fff;
   color: #262626;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.nav-contact:hover {
+  background: #262626; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+.nav-contact:focus {
+  outline: 2px solid #ffa500; /* Focus outline for accessibility */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    margin: 20px 40px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-contact {
+    margin-top: 20px;
+  }
 }

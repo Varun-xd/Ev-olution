@@ -4,9 +4,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 const App = () => {
   let heroData = [
-    { test1: "Dive Into", text2: "What you love " },
-    { test1: "Indulge", text2: "your passions" },
-    { test1: "Give in to", text2: "your passions" },
+    { text1: "Dive Into", text2: "What you love " },
+    { text1: "Indulge", text2: "your passions" },
+    { text1: "Give in to", text2: "your passions" },
   ];
   const [heroCount, setHeroCount] = useState(0);
   const [playStatus, setPlayStatus] = useState(false);
