@@ -1,0 +1,138 @@
+/* Contact.css */
+/* Global Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.nav {
+  position: relative;
+  z-index: 10; /* Ensure Navbar is on top */
+}
+
+/* Contact Background */
+.contact-background {
+  background-image: url("../../assets/contact-image.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure Contact background is below Navbar */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Contact Container */
+.contact-container {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  transition: transform 0.3s;
+}
+
+.contact-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Content */
+.contact-content h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: #333;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group .icon {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1.1em;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Hover Effects */
+.form-group input:hover,
+.form-group textarea:hover {
+  border-color: #ff007b;
+}
+
+.form-group input:hover::placeholder,
+.form-group textarea:hover::placeholder {
+  color: #ff007b;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 15px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+  }
+
+  .submit-button {
+    padding: 10px;
+  }
+}
+.success-message {
+  text-align: center;
+}

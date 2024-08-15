@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Background from "./components/Background/Background";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Contact from "./components/Contact/Contact";
+
 const App = () => {
   let heroData = [
     { text1: "Dive Into", text2: "What you love " },
@@ -19,16 +22,27 @@ const App = () => {
   }, []);
   return (
     <div>
-      <Background playStatus={playStatus} heroCount={heroCount} />
       <Navbar />
-      <Hero
-        setPlayStatus={setPlayStatus}
-        heroData={heroData[heroCount]}
-        heroCount={heroCount}
-        setHeroCount={setHeroCount}
-        playStatus={playStatus}
-      />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Background playStatus={playStatus} heroCount={heroCount} />
+              <Hero
+                setPlayStatus={setPlayStatus}
+                heroData={heroData[heroCount]}
+                heroCount={heroCount}
+                setHeroCount={setHeroCount}
+                playStatus={playStatus}
+              />
+            </>
+          }
+        />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 };
+
 export default App;

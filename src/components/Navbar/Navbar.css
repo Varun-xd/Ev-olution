@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 120px;
+  margin: 25px 120px;
   color: white;
 }
 
@@ -50,7 +50,7 @@
 
 .nav-contact:hover {
   background: #262626; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
+  color: #ffa500; /* Change text color on hover */
 }
 
 .nav-contact:focus {
@@ -72,4 +72,34 @@
   .nav-contact {
     margin-top: 20px;
   }
+}
+.submit-button {
+  align-self: flex-end;
+}
+.nav-home,
+.nav-explore,
+.nav-about {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+.nav-home:hover {
+  color: #ffa500;
+}
+.nav-explore:hover {
+  color: #ffa500;
+}
+.nav-about:hover {
+  color: #ffa500;
+}
+.nav button {
+  outline: none;
+}
+
+.nav button:focus {
+  outline: transparent;
 }
