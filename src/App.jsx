@@ -4,7 +4,7 @@ import Background from "./components/Background/Background";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/Contact";
-import Explore from "./components/Explore/Explore";
+import Explore from "./components/Explore/Explore"; // Ensure this matches the file name
 
 const App = () => {
   let heroData = [

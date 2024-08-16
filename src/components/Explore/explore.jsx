@@ -1,4 +1,4 @@
-import "./explore.css";
+import "./Explore.css";
 import React from "react";
 import cybertruck from "../../assets/cybertruck.jpg";
 import modelx from "../../assets/modelx.jpg";
