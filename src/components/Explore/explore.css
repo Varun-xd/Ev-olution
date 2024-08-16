@@ -1,0 +1,10 @@
+.explore-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.explore-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}

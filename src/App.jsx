@@ -4,6 +4,7 @@ import Background from "./components/Background/Background";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/Contact";
+import Explore from "./components/Explore/Explore";
 
 const App = () => {
   let heroData = [
@@ -41,6 +42,7 @@ const App = () => {
         />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Explore />
     </div>
   );
 };

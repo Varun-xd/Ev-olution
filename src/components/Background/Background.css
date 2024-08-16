@@ -8,7 +8,11 @@
   z-index: -1;
 }
 
-@keyframes fadein {
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -16,7 +20,6 @@
     opacity: 1;
   }
 }
-
-.fade-in {
-  animation: fadein 500ms ease-in-out;
+.background-container {
+  position: relative;
 }

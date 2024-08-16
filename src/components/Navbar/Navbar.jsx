@@ -12,6 +12,10 @@ const Navbar = () => {
     navigate("/contact");
   };
 
+  const handleExploreClick = () => {
+    navigate("/");
+  };
+
   return (
     <div className="nav">
       <div className="nav-logo">Ev-olution</div>
@@ -22,7 +26,11 @@ const Navbar = () => {
           </button>
         </li>
         <li>
-          <button className="nav-explore">Explore</button>
+          <a href="#contact">
+            <button onClick={handleExploreClick} className="nav-home">
+              explore
+            </button>
+          </a>
         </li>
         <li>
           <button className="nav-about">About</button>
