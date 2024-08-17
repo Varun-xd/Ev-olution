@@ -54,12 +54,16 @@ body {
   color: var(--secondary-color);
   font-size: var(--font-size-medium);
   font-weight: 500;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
 .hero-dot-play {
   margin-top: 7.5rem; /* 120px */
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .hero-dots {
@@ -67,6 +71,7 @@ body {
   align-items: center;
   gap: var(--gap-medium);
   list-style: none;
+  margin-bottom: 60px;
 }
 
 .hero-dot {
