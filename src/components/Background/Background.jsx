@@ -6,7 +6,7 @@ import image3 from "../../assets/image3.png";
 
 const Background = ({ playStatus, heroCount }) => {
   return (
-    <div className="background-container">
+    <div className="home-screen">
       {playStatus ? (
         <video className="background fade-in" autoPlay loop muted>
           <source src={video1} type="video/mp4" />

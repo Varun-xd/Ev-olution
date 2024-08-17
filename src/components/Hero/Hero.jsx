@@ -11,7 +11,7 @@ const Hero = ({
   playStatus,
 }) => {
   return (
-    <div>
+    <div className="home-screen">
       <div className="hero">
         <div className="hero-text">
           <p>{heroData.text1}</p>
