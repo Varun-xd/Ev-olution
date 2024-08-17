@@ -8,8 +8,9 @@ html {
 }
 
 .nav {
-  position: relative;
+  position: sticky;
   z-index: 10;
+  overflow: hidden;
 }
 
 .contact-background {
@@ -25,7 +26,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .contact-container {
@@ -37,6 +37,8 @@ html {
   width: 100%;
   margin: 20px auto;
   transition: transform 0.3s;
+  z-index: 2;
+  overflow: hidden;
 }
 
 .contact-container:hover {
