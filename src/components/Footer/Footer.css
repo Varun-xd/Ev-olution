@@ -19,13 +19,9 @@
   margin: 10px;
 }
 
-.footer-section h4 {
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
 .footer-section p,
 .footer-section ul {
+  font-size: 18px;
   margin: 0;
   padding: 0;
   list-style: none;

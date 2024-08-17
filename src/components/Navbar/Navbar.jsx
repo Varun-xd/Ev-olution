@@ -12,8 +12,12 @@ const Navbar = () => {
     navigate("/contact");
   };
 
-  const handleExploreClick = () => {
-    navigate("/");
+  const handleExploreClick = (event) => {
+    event.preventDefault();
+    const exploreSection = document.getElementById("explore-section");
+    if (exploreSection) {
+      exploreSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -26,10 +30,8 @@ const Navbar = () => {
           </button>
         </li>
         <li>
-          <a href="#contact">
-            <button onClick={handleExploreClick} className="nav-home">
-              explore
-            </button>
+          <a href="#explore-section" onClick={handleExploreClick}>
+            <button className="nav-home">explore</button>
           </a>
         </li>
         <li>

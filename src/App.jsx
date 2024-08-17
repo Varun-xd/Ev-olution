@@ -43,7 +43,9 @@ const App = () => {
         />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Explore />
+      <div id="explore-section">
+        <Explore />
+      </div>
       <Footer />
     </div>
   );

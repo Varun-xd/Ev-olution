@@ -7,14 +7,14 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-          <h4>About Us</h4>
+          <h3>About Us</h3>
           <p>
             We are a company dedicated to providing the best Electronic Vehicles
             to our customers.
           </p>
         </div>
         <div className="footer-section">
-          <h4>Quick Links</h4>
+          <h3>Quick Links</h3>
           <ul>
             <li>
               <a href="/">Home</a>
@@ -31,7 +31,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-section">
-          <h4>Follow Us</h4>
+          <h3>Follow Us</h3>
           <div className="social-icons">
             <a
               href="https://facebook.com"
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-section">
-          <h4>Contact Us</h4>
+          <h3>Contact Us</h3>
           <p>Email: varunkumar.workmail@gmail.com</p>
           <p>Phone: +9667588264</p>
         </div>
