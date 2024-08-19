@@ -1,15 +1,22 @@
 import "./Footer.css";
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   const handleExploreClick = (event) => {
     event.preventDefault();
-    const exploreSection = document.getElementById("explore-section");
-    if (exploreSection) {
-      exploreSection.scrollIntoView({ behavior: "smooth" });
-    }
+    navigate("/");
+    setTimeout(() => {
+      const exploreSection = document.getElementById("explore-section");
+      if (exploreSection) {
+        exploreSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -24,10 +31,12 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#explore-section" onClick={handleExploreClick}>
+              <a href="/" onClick={handleExploreClick}>
                 Explore
               </a>
             </li>
