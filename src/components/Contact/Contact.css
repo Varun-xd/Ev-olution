@@ -6,6 +6,9 @@ html {
   width: 100%;
   box-sizing: border-box;
 }
+.contact-page {
+  overflow: hidden;
+}
 
 .nav {
   position: sticky;
@@ -26,6 +29,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .contact-container {
@@ -38,7 +42,7 @@ html {
   margin: 20px auto;
   transition: transform 0.3s;
   z-index: 2;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .contact-container:hover {

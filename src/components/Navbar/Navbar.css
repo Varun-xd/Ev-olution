@@ -4,10 +4,10 @@
   align-items: center;
   margin: 25px 120px;
   color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: -80px;
   margin-bottom: -260px;
   text-shadow: #262626;
+  color: transparent;
 }
 .nav-logo {
   display: flex;

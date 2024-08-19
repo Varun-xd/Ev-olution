@@ -4,7 +4,7 @@ import Background from "./components/Background/Background";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/Contact";
-import Explore from "./components/Explore/Explore"; // Ensure this matches the file name
+import Explore from "./components/Explore/Explore";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {

@@ -13,14 +13,15 @@ const Navbar = () => {
     navigate("/contact");
   };
 
-  const handleExploreClick = (event) => {
-    event.preventDefault();
-    const exploreSection = document.getElementById("explore-section");
-    if (exploreSection) {
-      exploreSection.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleExploreClick = () => {
+    navigate("/");
+    setTimeout(() => {
+      const exploreSection = document.getElementById("explore-section");
+      if (exploreSection) {
+        exploreSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
-
   return (
     <div className="nav">
       <div className="nav-logo">
@@ -33,19 +34,14 @@ const Navbar = () => {
           </button>
         </li>
         <li>
-          <a href="#explore-section" onClick={handleExploreClick}>
-            <button className="nav-home">Explore</button>
-          </a>
+          <button onClick={handleExploreClick} className="nav-home">
+            Explore
+          </button>
         </li>
         <li>
-          <button className="nav-about">About</button>
-        </li>
-        <li>
-          <a href="#contact">
-            <button onClick={handleContactClick} className="nav-contact">
-              Contact
-            </button>
-          </a>
+          <button onClick={handleContactClick} className="nav-contact">
+            Contact
+          </button>
         </li>
       </ul>
     </div>

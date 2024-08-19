@@ -3,6 +3,13 @@ import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
+  const handleExploreClick = (event) => {
+    event.preventDefault();
+    const exploreSection = document.getElementById("explore-section");
+    if (exploreSection) {
+      exploreSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -20,10 +27,9 @@ const Footer = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="/explore">Explore</a>
+              <a href="#explore-section" onClick={handleExploreClick}>
+                Explore
+              </a>
             </li>
             <li>
               <a href="/contact">Contact</a>
