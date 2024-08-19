@@ -4,9 +4,8 @@ import Background from "./components/Background/Background";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/Contact";
-import Explore from "./components/Explore/Explore";
+import Explore from "./components/Explore/Explore.jsx";
 import Footer from "./components/Footer/Footer";
-
 const App = () => {
   let heroData = [
     { text1: "Dive Into", text2: "What you love " },
