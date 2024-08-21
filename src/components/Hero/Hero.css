@@ -26,11 +26,11 @@ body {
 
 .hero-text {
   color: var(--primary-color);
-  font-size: 90px;
+  font-size: 85px;
   font-weight: 500;
   line-height: var(--line-height-large);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
-
 .hero-explore {
   display: flex;
   align-items: center;

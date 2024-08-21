@@ -27,6 +27,7 @@
   box-shadow: #262626;
   text-shadow: #262626;
   transition: background-color 0.3s ease;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .nav-menu li {
