@@ -5,7 +5,7 @@
   margin: 25px 120px;
   color: white;
   margin-top: -80px;
-  margin-bottom: -260px;
+  margin-bottom: -320px;
   text-shadow: #262626;
   color: transparent;
 }
@@ -14,7 +14,7 @@
   align-items: center;
 }
 .vector-logo {
-  width: 390px; /* Adjust the width as needed */
+  width: 350px; /* Adjust the width as needed */
   margin-left: 50px;
   padding-bottom: -100px;
 }

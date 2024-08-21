@@ -14,7 +14,7 @@
 
 .overlay-text {
   position: absolute;
-  bottom: 20px; /* Adjust as needed */
+  bottom: 1px; /* Adjust as needed */
   left: 50%; /* Adjust as needed */
   transform: translateX(-50%, -50%);
   text-align: center;
@@ -24,7 +24,7 @@
 .overlay-text h1 {
   flex: 1;
   font-family: "Poppins", sans-serif;
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 700;
   margin: 0;
   text-align: center;
@@ -33,7 +33,7 @@
 .overlay-text .details {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 22px;
   margin: 5px 0;
   text-align: center;
 }
@@ -47,8 +47,8 @@
 .explore-item {
   position: relative;
   margin-right: 500px;
-  margin-left: 600px;
-  bottom: 800px;
+  margin-left: 550px;
+  bottom: 750px;
   width: 30%;
 }
 .overlay-text .vector-overlay {
@@ -56,6 +56,5 @@
   top: 0;
   left: 0;
   margin: 5px -480px;
-
   pointer-events: none;
 }
