@@ -6,7 +6,7 @@ import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/Contact";
 import Explore from "./components/Explore/Explore";
 import Footer from "./components/Footer/Footer";
-import Backgroundmusic from "./components/Backgroundmusic/Backgroundmusic";
+
 const App = () => {
   let heroData = [
     { text1: "Dive Into", text2: "What you love " },
@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Backgroundmusic />
+
       <Routes>
         <Route
           path="/"

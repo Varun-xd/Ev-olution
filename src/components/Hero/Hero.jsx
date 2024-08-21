@@ -2,6 +2,8 @@ import "./Hero.css";
 import arrow_btn from "../../assets/arrow_btn.png";
 import pause_icon from "../../assets/pause_icon.png";
 import play_icon from "../../assets/play_icon.png";
+import backgroundmusic from "../../assets/backgroundmusic.mp3";
+import { useState, useEffect, useRef } from "react";
 
 const Hero = ({
   heroData,
@@ -10,6 +12,27 @@ const Hero = ({
   setPlayStatus,
   playStatus,
 }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(new Audio(backgroundmusic));
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    const handleEnded = () => setIsPlaying(false);
+
+    audio.addEventListener("ended", handleEnded);
+    return () => {
+      audio.removeEventListener("ended", handleEnded);
+    };
+  }, []);
+
+  const handlePlayMusic = () => {
+    const audio = audioRef.current;
+    if (!isPlaying) {
+      audio.play();
+      setIsPlaying(true);
+    }
+  };
+
   return (
     <div className="home-screen">
       <div className="hero">
@@ -18,7 +41,13 @@ const Hero = ({
           <p>{heroData.text2}</p>
         </div>
         <div className="hero-explore">
-          <p>Play Some Music</p>
+          <button
+            className="play-music"
+            onClick={handlePlayMusic}
+            disabled={isPlaying}
+          >
+            Play Some Music
+          </button>
           <img src={arrow_btn} alt="" />
         </div>
         <div className="hero-dot-play">
