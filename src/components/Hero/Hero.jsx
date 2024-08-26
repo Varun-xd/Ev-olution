@@ -46,7 +46,7 @@ const Hero = ({
             onClick={handlePlayMusic}
             disabled={isPlaying}
           >
-            Play Some Music
+            Rev Up the Rhythm
           </button>
           <img src={arrow_btn} alt="" />
         </div>
